@@ -62,6 +62,7 @@ section {
 section:nth-child(1) {
   background-color: $main-color;
 }
+// sidebar start 
 .sidebar {
   position: absolute;
   top: 0;
@@ -162,6 +163,7 @@ section:nth-child(1) {
 .sidebar.active ul li .tooltip {
   display: none;
 }
+// sidebar end
 .main-content {
   background-color: $main-color3;
   position: relative;
