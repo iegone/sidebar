@@ -147,14 +147,91 @@ section:nth-child(1) {
 }
 
 .main-content {
-  background-color: #707070;
+  background: url(/sonoma.4e50c1db.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   top: 0;
   left: 80px;
   transition: all 0.5s ease;
   width: calc(100% - 80px);
   padding: 1rem;
+}
+
+.frem {
+  background-color: rgba(27, 27, 27, 0.9);
+  backdrop-filter: blur(6px);
+  height: 70vh;
+  width: 70vw;
+  border-radius: 10px;
+}
+
+.uper-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(57, 57, 57);
+  height: 30px;
+  border-radius: 10px 10px 0 0;
+}
+
+.cercel1,
+.cercel2,
+.cercel3 {
+  height: 12px;
+  width: 12px;
+  margin: 4px;
+  border-radius: 12px;
+}
+
+.cercel1 {
+  background-color: #ff5f57;
+  margin-left: 15px;
+}
+
+.cercel2 {
+  background-color: #febc2e;
+}
+
+.cercel3 {
+  background-color: #28c840;
+}
+
+.cercel1:hover,
+.cercel2:hover,
+.cercel3:hover {
+  background-color: bisque;
+}
+
+.windo {
+  color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+.typing {
+  color: antiquewhite;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 150px;
+  border-right: 3px solid;
+  animation: typing 1.5s steps(13), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0px;
+  }
+}
+.windo-rest {
+  background: rgb(26, 142, 242);
 }
 
 section:nth-child(2) {
